@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#e5d3b1;
+    --second-color: rgb(255 253 223);
+}
+/*app container style*/
+.appContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--main-color);
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*sidebar style*/
+.container{
+    padding: 2vh;
+    width: 10vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column  ;
+    background-color: var(--second-color);
+}
+.logo{
+    width: 60px;
+    height: 10vh;
+}
+.sidebar{
+    height: 50vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+.sidebar li:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 1.2vh;
+    border-radius: 50%;
+}
+/*nav style*/
+.navContainer{
+    width: 100%;
+    overflow: hidden;
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vh;
+    
+}
+.searchBar{
+    border: none;
+    padding: 2vh;
+    background-color: transparent;
+    margin-left: 1vh;
+    
+}
+
+.bookContainer{
+    width: 150px;
+    height: 260px;
+    text-align: center;
+}
+.bookImg{
+    width: 150px;
+    height: 200px;
+}
+.bookShelfContainer{
+    width: 80%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* overflow: scroll; */
+    gap: 20px;
+    padding: 20px;
+}
