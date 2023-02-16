@@ -4,22 +4,26 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:#e5d3b1;
+    --main-color: #f5f5f5;
+    --second-color: rgb(225 225 225);
+    --button-color: rgb(15, 15, 15);
+    /* --main-color:#f7f3ee;
     --second-color: rgb(255 253 223);
+    --button-color:rgb(15, 15, 15); */
 }
 /*app container style*/
+
 .appContainer{
-    width: 100vw;
-    height: 100vh;
     display: flex;
-    overflow: hidden;
     background-color: var(--main-color);
-    flex-direction: column;
-    flex-wrap: wrap;
+}
+.rightContainer{
+    width: 96%;
+    margin: 0 2% 0 2%;
 }
 /*sidebar style*/
 .container{
-    padding: 2vh;
+    /* padding: 2vh; */
     width: 10vh;
     height: 100vh;
     display: flex;
@@ -60,7 +64,7 @@
 }
 .searchBar{
     border: none;
-    padding: 2vh;
+    /* padding: 2vh; */
     background-color: transparent;
     margin-left: 1vh;
     
@@ -80,9 +84,30 @@
     height: 45vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     /* overflow: scroll; */
     gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
+}
+.homeContainer{
+    /* width: 100vw; */
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    gap: 35px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.homeText{
+    /* margin: 1vh;
+    padding:10px; */
+    line-height: 1.9;
+}
+.homeText button{
+    background-color: var(--button-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    margin:10px 0px 0px 10px
 }
