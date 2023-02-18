@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -ms-overflow-style: none; 
 }
 :root{
     --main-color: #f5f5f5;
@@ -10,6 +11,9 @@
     /* --main-color:#f7f3ee;
     --second-color: rgb(255 253 223);
     --button-color:rgb(15, 15, 15); */
+}
+::-webkit-scrollbar {
+    display: none;
 }
 /*app container style*/
 
@@ -63,10 +67,16 @@
     
 }
 .searchBar{
-    border: none;
-    /* padding: 2vh; */
-    background-color: transparent;
-    margin-left: 1vh;
+    right: 0;
+    margin-top: 1vh;
+    height: 100%;
+    width: 20vw;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: var(--button-color);
+    cursor: pointer;
+    outline: 0;
     
 }
 
@@ -80,9 +90,10 @@
     height: 200px;
 }
 .bookShelfContainer{
-    width: 80%;
-    height: 45vh;
+    width: 90vw;
+    height: 40vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     /* overflow: scroll; */
@@ -90,18 +101,19 @@
     /* padding: 20px; */
 }
 .homeContainer{
-    /* width: 100vw; */
-    height: 100vh;
     display: flex;
-    overflow: hidden;
-    gap: 35px;
+    height: 100vh;
+    gap: 20px;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: overlay;
 }
 .homeText{
-    /* margin: 1vh;
-    padding:10px; */
+    background-image: url('../assets/pexels-hailey-galloway-4825139.jpg');
     line-height: 1.9;
+    background-size: cover;
+    height: 30vh;
+    padding: 5vh
 }
 .homeText button{
     background-color: var(--button-color);
@@ -110,4 +122,16 @@
     border-radius: 20px;
     padding: 10px 15px 10px 15px;
     margin:10px 0px 0px 10px
+}
+.allBooksContainer{
+    height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: overlay;
+    width: 100%;
+}
+.allBooksContainer h1{
+    width: 100%;
+    margin-top: 10px;
 }

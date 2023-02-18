@@ -8,6 +8,15 @@ function BookShelf() {
         <Book />
         <Book />
         <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
     </div>
   )
 }

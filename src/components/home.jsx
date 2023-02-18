@@ -1,12 +1,10 @@
 import React from "react";
 import BookShelf from "./bookshelf";
 import Nav from "./nav";
-import SideBar from "./sidebar";
 
 function Home() {
   return (
-    <div className="homeContainer">
-      
+    <div className="homeContainer"> 
       <Nav />
       <div className="homeText">
         <h1>Keep the story going........</h1>
