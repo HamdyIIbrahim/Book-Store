@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Book() {
+function Book(bookName) {
   return (
     <div className='bookContainer'>
         <img className='bookImg' src={require('../assets/book 1.jpeg')} alt="book" />
