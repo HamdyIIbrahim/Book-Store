@@ -19,7 +19,7 @@ function SideBar() {
           </svg></Link>
         </li>
         <li>
-          <Link to="/allbooks"><svg
+          <Link to="/books"><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"

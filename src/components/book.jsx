@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Book(bookName) {
+function Book(bookName,bookUrl) {
   return (
     <div className='bookContainer'>
-        <img className='bookImg' src={require('../assets/book 1.jpeg')} alt="book" />
-        <h5>The Psychology of Harry Potter</h5>
+        <img className='bookImg' src={require(bookUrl)} alt="book" />
+        <h5>{bookName}</h5>
     </div>
   )
 }

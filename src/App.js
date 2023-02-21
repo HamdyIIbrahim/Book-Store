@@ -12,7 +12,7 @@ function App() {
       <div className='rightContainer'>
         <Routes>
           <Route exact path='/' element={<Home /> } />
-          <Route path='/allbooks' element={<Allbooks /> } />
+          <Route path='/books' element={<Allbooks /> } />
           <Route path='/saved' element={<Savedbooks /> } />
           <Route path='/favs' element={<Favbooks /> } />
         </Routes>

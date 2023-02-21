@@ -1,15 +1,10 @@
 import React from 'react'
 import Book from './book';
 
-function BookShelf() {
-  
+function BookShelf() { 
   return (
     <div className="bookShelfContainer">
-        {
-          fetch("/books").then(data=>{
-            
-          })
-        }
+        
     </div>
   )
 }
